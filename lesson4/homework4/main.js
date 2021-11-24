@@ -2,7 +2,7 @@
 // - створити функцію яка обчислює та повертає площу прямокутника зі сторонами а і б
 
 // function areaRect(a,b) {
-//     c=a*b;
+//     let c=a*b;
 //     return c;
 // }
 // areaRect(4,8);
@@ -68,10 +68,10 @@
 // printArr([true,4,'sat'])
 //
 // - створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ. Для кожного об'єкту окремий блок.
-
-function printMas(arr) {
-    for (let item of arr) {
-        document.write(`<div>${item.id} - ${item.name} - ${item.age}</div>`);
-    }
-};
-printMas()
+//
+// function printMas(arr) {
+//     for (let item of arr) {
+//         document.write(`<div>${item.id} - ${item.name} - ${item.age}</div>`);
+//     }
+// };
+// printMas()
