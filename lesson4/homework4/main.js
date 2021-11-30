@@ -32,7 +32,7 @@
 // - створити функцію яка створює параграф з текстом. Текст задати через аргумент
 
 // function aboutP(text) {
-//     document.write(`<p>${text}</>`);
+//     document.write(`<p>${text}</p>`);
 // }
 // aboutP('Hello')
 
@@ -69,9 +69,9 @@
 //
 // - створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ. Для кожного об'єкту окремий блок.
 //
-// function printMas(arr) {
-//     for (let item of arr) {
-//         document.write(`<div>${item.id} - ${item.name} - ${item.age}</div>`);
-//     }
-// };
-// printMas()
+function printMas(arr) {
+    for (let item of arr) {
+        document.write(`<div>${item.id} - ${item.name} - ${item.age}</div>`);
+    }
+};
+printMas()
