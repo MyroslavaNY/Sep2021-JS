@@ -10,10 +10,10 @@
 // -- отримати весь список класів елемента з id=rules і вивести їх в console.log
 // -- поміняти колір тексту у всіх елементів fc_rules на червоний
 
-let contentUp = document.getElementById("content");
+let contentUp = document.getElementById("content")
 console.log(contentUp);
 
-let textRules = document.getElementById("rules");
+let textRules = document.getElementById("rules")
 console.log(textRules);
 
 contentUp.innerText = '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, iusto.</p>'
@@ -23,7 +23,7 @@ contentUp.style.background = 'red';
 contentUp.style.color = 'blue';
 textRules.style.background = 'blue';
 
-let classElements = textRules.getElementsByTagName("class");
+let classElements = textRules.getElementsByTagName("class")
 console.log(classElements)
 
 let classRules = document.getElementsByClassName("fc_rules")
