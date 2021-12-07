@@ -11,18 +11,18 @@
 // -- поміняти колір тексту у всіх елементів fc_rules на червоний
 
 let contentUp = document.getElementById("content")
-console.log(contentUp);
+console.log(contentUp)
 
 let textRules = document.getElementById("rules")
-console.log(textRules);
+console.log(textRules)
 
 contentUp.innerText = '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, iusto.</p>'
 textRules.innerText= '<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam assumenda at distinctio doloribus exercitationem labore laborum officia, ullam unde voluptatibus?</div>'
 
-contentUp.style.background = 'red';
-contentUp.style.color = 'blue';
-textRules.style.background = 'blue';
-
+contentUp.style.background = 'red'
+contentUp.style.color = 'blue'
+textRules.style.background = 'blue'
+textRules.style.color = 'red'
 let classElements = textRules.getElementsByTagName("class")
 console.log(classElements)
 
