@@ -23,8 +23,8 @@ contentUp.style.background = 'red';
 contentUp.style.color = 'blue';
 textRules.style.background = 'blue';
 
-let classElements = document.getElementsByTagName("class")
-console.log(classElements.rules);
+let classElements = textRules.getElementsByTagName("class");
+console.log(classElements)
 
 let classRules = document.getElementsByClassName("fc_rules")
 console.log(classRules);
