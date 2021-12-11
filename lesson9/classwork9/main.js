@@ -154,13 +154,13 @@ coursesArray.forEach(item =>{
     div.style.margin = '35px 10px 10px 20px'
     let titleDiv = document.createElement('div');
     titleDiv.classList.add('title')
-    titleDiv.style.textAlign = 'center'
+    titleDiv.style.margin = '0 auto'
     let durationDiv = document.createElement('div');
     durationDiv.classList.add('duration')
     durationDiv.style.justifyContent = 'center'
     let monthDiv = document.createElement('div');
     monthDiv.classList.add('month')
-    let hourDiv = document.createElement('div');
+   let hourDiv = document.createElement('div');
     hourDiv.classList.add('hour')
     durationDiv.append(monthDiv, hourDiv)
     durationDiv.style.display = 'flex'

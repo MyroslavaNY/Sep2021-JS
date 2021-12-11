@@ -1,0 +1,11 @@
+.menu{
+    transition: 2s;
+    background: aliceblue;
+    min-width: 30px;
+}
+.hide{
+    transition: 2s;
+    height: 0;
+    overflow: hidden;
+}
+
