@@ -19,19 +19,17 @@ fetch(' https://jsonplaceholder.typicode.com/posts').then(value => {
             let postBtn = document.createElement('button');
             postBtn.innerText = 'comments'
             postBtn.onclick = function () {
-               fetch('https://jsonplaceholder.typicode.com/posts/${post.id}/comments')
-                   .then(value => value.json()
+               fetch('https://jsonplaceholder.typicode.com/posts/'+ post.id +'/comments')
+                   .then(response => response.json()
                        .then(comments =>{
-                           let commentsDiv = document.createElement('div');
-                           commentsDiv.classList.add('comments');
-
                            for (let comment of comments) {
-                            let commentDiv = document.createElement('div') ;
-                            commentDiv.classList.add('comment');
-                            commentDiv.innerText = comment;
-                                 commentsDiv.appendChild(commentDiv);
+                            if (post.id === comment.postId){
+                          let divComment = document.createElement('div');
+                          divComment.classList.add('comment');
+                          divComment.innerText = `${comment.name}`;
+                                postDiv.appendChild(divComment)
+                            }
                            }
-                           postDiv.appendChild(commentsDiv);
 
                }))
             }
