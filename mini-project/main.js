@@ -25,3 +25,28 @@
 // post-details.html - блок с информацией про пост вверху. Комментарии - по 4 в ряд.
 // Все без исключения элементы, который характеризируют user,post,comment  визуализировать, так,
 // что бы было видно их блоки (дать задний фон + margin. Иными словами - крайне четкая сетка)
+
+
+fetch('https://jsonplaceholder.typicode.com/users').then(responce =>
+responce.json().then(users =>{
+    for (let user of users){
+        let divUser = document.createElement('div');
+        divUser.classList.add('user');
+        let divUserId = document.createElement('div');
+        divUserId.innerText = `${user.id}`;
+        let divUserName = document.createElement('div');
+        divUserName.innerText = `${user.name}`;
+        let btnUser = document.createElement('button');
+        btnUser.classList.add('btnUser');
+        btnUser.onclick =  () => {
+            let details = user.id;
+            localStorage.setItem('detailsUser', details);
+
+        }
+        btnUser.innerText = 'Details'
+
+        divUser.append(divUserId, divUserName, btnUser);
+        document.body.appendChild(divUser)
+    }
+    }
+))
