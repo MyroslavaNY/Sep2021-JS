@@ -39,7 +39,7 @@ responce.json().then(users =>{
         let btnUser = document.createElement('button');
         btnUser.classList.add('btnUser');
         btnUser.onclick =  () => {
-            let details = user.id;
+            let details = [user.id, user. name, user.post];
             localStorage.setItem('detailsUser', details);
 
         }
